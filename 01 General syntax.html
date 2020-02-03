@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- this is a jquery file , this is main file. -->
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+
+
+   <!-- now start jquery functionality ..  lets go -->
+	<script type="text/javascript">
+		/*
+		 this is a main syntax copy it again and agian.. $('').(); 
+		 */
+		$(document).ready(function(){
+         
+         $('.emoticon').click(function(){
+         	var text_val=$('#text').val();
+         	var icon_val=$(this).attr('value');
+
+         	$('#text').val(text_val + ' ' +icon_val + ' ');
+         });
+
+		});
+	</script>
+</head>
+<body>
+	<textarea id="text"></textarea>
+	<p id="main">
+	Add Emoticone:
+	<img src="emot/1.png" value=":D" class="emoticon">
+	<img src="emot/2.png" value=":*" class="emoticon">
+	<img src="emot/3.png" value=":/" class="emoticon">
+	<img src="emot/4.png" value=":)" class="emoticon">
+	<img src="emot/5.png" value=":(" class="emoticon">
+	<img src="emot/6.png" value="(y)" class="emoticon">
+	<img src="emot/7.png" value=":'(" class="emoticon">
+	</p>
+</body>
+</html>

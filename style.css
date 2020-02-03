@@ -1,0 +1,36 @@
+body{
+	background-color: lightgreen;
+	padding: 200px 470px; 
+}
+img{
+	height: 26px;
+	width: 26px;
+	cursor: pointer;
+	padding-left: 6px;
+}
+#text{
+	height: 90px;
+	width: 350px;
+	padding: 13px;
+	border-radius: 10px;
+	font-size: 18px;
+	font-family: arial;
+	font-weight: 500;
+	border: 1px solid blue;
+	background-color: #423D3D;
+	color: white;
+	resize: none;
+}
+#text:focus{
+	border: 2px solid red;
+}
+#main{
+	background-color: #948F8F;
+	border-radius: 20px;
+	font-weight: bold;
+	vertical-align: middle;
+	width: 365px;
+	padding: 9px;
+	border: 1px solid gray;
+
+}
